@@ -44,11 +44,11 @@
     <img src="/home.jpeg" class="home" alt="home" />
     <div class="card px-8 py-10">
       <div class="d-flex" style="flex-direction: column">
-        <p style="font-weight: bold; font-family: cursive">New Arrival</p>
+        <p style="font-weight: 500">New Arrival</p>
         <h1
           style="
             font-size: 38px;
-            font-weight: 800;
+            font-weight: 700;
             color: #b88e2f;
             margin-bottom: 2px;
           "
@@ -64,11 +64,13 @@
       <v-btn flat tile color="#b88e2f">Buy now</v-btn>
     </div>
     <BrowseRange />
+    <Products />
   </v-app>
 </template>
 
 <script setup>
 import BrowseRange from "@/components/Home/BrowseRange.vue";
+import Products from "@/components/Home/Products.vue";
 </script>
 
 <style scoped>
@@ -93,7 +95,7 @@ import BrowseRange from "@/components/Home/BrowseRange.vue";
   justify-content: center;
   width: 100px;
   height: 40px;
-  transition: all 0.3s ease-in-out;
+
   border-radius: 2px;
 }
 
