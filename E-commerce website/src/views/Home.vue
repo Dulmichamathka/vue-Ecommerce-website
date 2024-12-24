@@ -94,6 +94,7 @@ import Products from "@/components/Home/Products.vue";
   align-items: center;
   justify-content: center;
   width: 100px;
+  transition: all 0.3s ease-in-out;
   height: 40px;
 
   border-radius: 2px;

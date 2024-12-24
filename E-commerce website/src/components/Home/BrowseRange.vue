@@ -7,19 +7,19 @@
       </div>
     </v-row>
     <v-row class="d-flex align-center justify-center my-11">
-      <div class="d-flex justify-center flex-column align-center">
+      <div class="d-flex justify-center flex-column align-center mr-8">
         <v-card flat width="300px" height="400px">
           <img class="browseImg" src="/drowseimg1.png" alt="browse" />
         </v-card>
         <p class="mt-5 font-weight-medium">Dining</p>
       </div>
-      <div class="d-flex justify-center flex-column align-center">
+      <div class="d-flex justify-center flex-column align-center mr-8">
         <v-card flat width="300px" height="400px">
           <img class="browseImg" src="/browseimg2.png" alt="browse" />
         </v-card>
         <p class="mt-5 font-weight-medium">Living</p>
       </div>
-      <div class="d-flex justify-center flex-column align-center">
+      <div class="d-flex justify-center flex-column align-center mr-8">
         <v-card flat width="300px" height="400px">
           <img class="browseImg" src="/browseimg3.png" alt="browse" />
         </v-card>
@@ -35,7 +35,6 @@
 }
 
 .v-card {
-  margin-right: 25px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
