@@ -73,3 +73,29 @@
 </template>
 
 <script setup></script>
+
+<style scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move into position */
+  }
+}
+
+img {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards; /* 1-second animation with a fade-in effect */
+}
+
+img:nth-child(odd) {
+  animation-delay: 0.3s; /* Stagger animations for odd images */
+}
+
+img:nth-child(even) {
+  animation-delay: 0.6s; /* Stagger animations for even images */
+}
+</style>
