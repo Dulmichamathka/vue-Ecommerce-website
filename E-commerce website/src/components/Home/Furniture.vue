@@ -72,30 +72,39 @@
   </v-container>
 </template>
 
-<script setup></script>
-
 <style scoped>
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* Start slightly below */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Move into position */
-  }
-}
-
 img {
   opacity: 0;
-  animation: fadeIn 1s ease forwards; /* 1-second animation with a fade-in effect */
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-img:nth-child(odd) {
-  animation-delay: 0.3s; /* Stagger animations for odd images */
-}
-
-img:nth-child(even) {
-  animation-delay: 0.6s; /* Stagger animations for even images */
+img.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
+
+<script setup>
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const images = document.querySelectorAll("img");
+
+  const observer = new IntersectionObserver(
+    /*observer: A variable name for the newly created IntersectionObserver instance.*/
+    /* new IntersectionObserver(): Creates a new observer that watches elements as they enter/exit the viewport.*/ (
+      entries
+    ) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.1 } // Trigger when 10% of the image is visible
+  );
+
+  images.forEach((img) => observer.observe(img));
+});
+</script>
