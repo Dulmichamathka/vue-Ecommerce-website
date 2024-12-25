@@ -44,8 +44,9 @@
     <img src="/home.jpeg" class="home" alt="home" />
     <div class="card px-8 py-10">
       <div class="d-flex" style="flex-direction: column">
-        <p style="font-weight: 500">New Arrival</p>
+        <p class="name" style="font-weight: 500">New Arrival</p>
         <h1
+          class="name"
           style="
             font-size: 38px;
             font-weight: 700;
@@ -61,15 +62,19 @@
           minima.
         </p>
       </div>
-      <v-btn flat tile color="#b88e2f">Buy now</v-btn>
+      <v-btn class="name" flat tile color="#b88e2f">Buy now</v-btn>
     </div>
     <BrowseRange />
     <Products />
+    <Inspiration />
+    <Furniture />
   </v-app>
 </template>
 
 <script setup>
 import BrowseRange from "@/components/Home/BrowseRange.vue";
+import Furniture from "@/components/Home/Furniture.vue";
+import Inspiration from "@/components/Home/Inspiration.vue";
 import Products from "@/components/Home/Products.vue";
 </script>
 
@@ -129,5 +134,22 @@ import Products from "@/components/Home/Products.vue";
 
 .v-btn.v-btn--density-default {
   height: calc(var(--v-btn-height) + 20px);
+}
+
+.name {
+  opacity: 0;
+  animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 </style>

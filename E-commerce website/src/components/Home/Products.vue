@@ -33,7 +33,7 @@ import FurniItem from "./FurniItem.vue";
 
 const productsitem = [
   {
-    img: "/browseimg2.png",
+    img: "/4.png",
     discount: "yes",
     amount: "-30%",
     new: "no",
@@ -43,7 +43,7 @@ const productsitem = [
     oldprize: "Rs 3.500.000",
   },
   {
-    img: "/browseimg2.png",
+    img: "/5.png",
     discount: "no",
     amount: "-30%",
     new: "no",
@@ -53,47 +53,7 @@ const productsitem = [
     oldprize: "Rs 3.500.000",
   },
   {
-    img: "/browseimg2.png",
-    discount: "yes",
-    amount: "-50%",
-    new: "no",
-    title: "Syltherine",
-    subtitle: "Syltherine cafe chair",
-    newprize: "Rs 2.500.000",
-    oldprize: "Rs 3.500.000",
-  },
-  {
-    img: "/browseimg2.png",
-    discount: "no",
-    amount: "New",
-    new: "yes",
-    title: "Syltherine",
-    subtitle: "Syltherine cafe chair",
-    newprize: "Rs 2.500.000",
-    oldprize: "Rs 3.500.000",
-  },
-  {
-    img: "/browseimg2.png",
-    discount: "no",
-    amount: "-30%",
-    new: "no",
-    title: "Syltherine",
-    subtitle: "Syltherine cafe chair",
-    newprize: "Rs 2.500.000",
-    oldprize: "Rs 3.500.000",
-  },
-  {
-    img: "/browseimg2.png",
-    discount: "no",
-    amount: "New",
-    new: "yes",
-    title: "Syltherine",
-    subtitle: "Syltherine cafe chair",
-    newprize: "Rs 2.500.000",
-    oldprize: "Rs 3.500.000",
-  },
-  {
-    img: "/browseimg2.png",
+    img: "/6.png",
     discount: "yes",
     amount: "-50%",
     new: "no",
@@ -103,7 +63,47 @@ const productsitem = [
     oldprize: "Rs 3.500.000",
   },
   {
-    img: "/browseimg2.png",
+    img: "/living.jpeg",
+    discount: "no",
+    amount: "New",
+    new: "yes",
+    title: "Syltherine",
+    subtitle: "Syltherine cafe chair",
+    newprize: "Rs 2.500.000",
+    oldprize: "Rs 3.500.000",
+  },
+  {
+    img: "/7.png",
+    discount: "no",
+    amount: "-30%",
+    new: "no",
+    title: "Syltherine",
+    subtitle: "Syltherine cafe chair",
+    newprize: "Rs 2.500.000",
+    oldprize: "Rs 3.500.000",
+  },
+  {
+    img: "/8.png",
+    discount: "no",
+    amount: "New",
+    new: "yes",
+    title: "Syltherine",
+    subtitle: "Syltherine cafe chair",
+    newprize: "Rs 2.500.000",
+    oldprize: "Rs 3.500.000",
+  },
+  {
+    img: "/living2.jpeg",
+    discount: "yes",
+    amount: "-50%",
+    new: "no",
+    title: "Syltherine",
+    subtitle: "Syltherine cafe chair",
+    newprize: "Rs 2.500.000",
+    oldprize: "Rs 3.500.000",
+  },
+  {
+    img: "/living3.jpeg",
     discount: "no",
     amount: "New",
     new: "yes",
@@ -114,3 +114,11 @@ const productsitem = [
   },
 ];
 </script>
+
+<style scoped>
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>

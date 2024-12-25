@@ -60,4 +60,7 @@ const { products } = defineProps({
   opacity: 0.7;
 }
 
+
+
+
 </style>
