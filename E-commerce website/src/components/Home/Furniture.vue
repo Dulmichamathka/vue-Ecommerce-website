@@ -7,7 +7,7 @@
       </div>
     </v-row>
     <v-row>
-      <v-col cols="12" sm="12" md="5">
+      <v-col cols="12" sm="12" md="5" class="mb-8">
         <div class="d-flex align-end flex-wrap ga-3 mb-3">
           <img
             style="width: 200px; height: 350px; object-fit: cover"

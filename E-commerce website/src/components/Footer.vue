@@ -1,5 +1,5 @@
 <template>
-  <v-divider class="my-10"></v-divider>
+  <v-divider class="mb-10"></v-divider>
   <v-row>
     <v-col cols="12" sm="12" md="4">
       <v-container class="ml-15">

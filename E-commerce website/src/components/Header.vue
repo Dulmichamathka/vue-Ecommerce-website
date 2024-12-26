@@ -12,7 +12,7 @@
         <h2 class="ml-2">Furniro</h2>
       </router-link>
       <div class="flex items-center gap-1">
-        <router-link :to="{ name: 'shop' }" class="nav-item items-center px-5"
+        <router-link :to="{ name: 'home' }" class="nav-item items-center px-5"
           >Home</router-link
         >
         <router-link

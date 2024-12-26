@@ -1,6 +1,6 @@
 <template>
-  <v-card v-for="(product,index) in products" :key="index"  flat tile  max-width="240" color="#F4F5F7" class="mr-8 mb-8">
-    <img height="300px" :src="product.img" style="position: relative;">
+  <v-card v-for="(product,index) in products" :key="index"  flat tile  width="250px" color="#F4F5F7" class="mr-8 mb-8">
+    <img height="300px" width="100%"  :src="product.img" style="position: relative;object-fit: cover;">
    <div v-if="product.discount ==='yes'"  class="discount-badge" >{{ product.amount }}</div>
    <div v-if="product.new ==='yes'"  class="new-badge" >{{ product.amount }}</div>
   </img>
