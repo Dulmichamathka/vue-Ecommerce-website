@@ -1,4 +1,6 @@
 <template>
+<router-link :to="{name:'productdetails'}" >
+
   <v-card v-for="(product,index) in products" :key="index"  flat tile  width="250px" color="#F4F5F7" class="mr-8 mb-8">
     <img height="300px" width="100%"  :src="product.img" style="position: relative;object-fit: cover;">
    <div v-if="product.discount ==='yes'"  class="discount-badge" >{{ product.amount }}</div>
@@ -12,6 +14,7 @@
   </div>
   
   </v-card>
+</router-link>
 </template>
 
 <script setup>
