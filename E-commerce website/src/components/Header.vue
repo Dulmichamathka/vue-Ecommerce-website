@@ -21,12 +21,12 @@
           >Shop</router-link
         >
         <router-link
-          :to="{ name: 'shop' }"
+          :to="{ name: 'blog' }"
           class="nav-item inline-flex items-center px-5"
-          >About</router-link
+          >Blog</router-link
         >
         <router-link
-          :to="{ name: 'shop' }"
+          :to="{ name: 'contact' }"
           class="nav-item inline-flex items-center h-full px-5 font-bold"
           >Contact</router-link
         >
@@ -36,7 +36,7 @@
         <v-icon class="icon" icon="fas fa-user"></v-icon>
         <v-icon class="icon" icon="fas fa-magnifying-glass"></v-icon>
         <v-icon class="icon" icon="fas fa-heart"></v-icon>
-        <v-icon class="icon" icon="fas fa-cart-shopping"></v-icon>
+        <v-icon class="icon" icon="fas fa-cart-shopping" @click="show"></v-icon>
       </div> </v-container
   ></v-app-bar>
 </template>

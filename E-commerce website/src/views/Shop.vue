@@ -4,7 +4,10 @@
     <div class="position-relative" style="width: 100%; height: 400px">
       <img class="shopping" src="/shopping.jpeg" alt="" />
 
-      <div class="image-content">
+      <div class="image-content d-flex flex-column align-center">
+        <v-icon>
+          <img src="/logo.png" alt="logo" width="50px" />
+        </v-icon>
         <p class="topic">Shop</p>
         <small class="font-weight-medium mr-2"
           >Home<v-icon size="12">fas fa-chevron-right</v-icon>
@@ -67,67 +70,7 @@
       <v-btn color="#F9F1E7" flat @click="nextPage">Next</v-btn>
     </v-row>
   </v-container>
-  <v-row>
-    <div
-      class="px-15 py-15 d-flex align-center ga-4 mt-8"
-      style="width: 100%; height: auto; background: #f9f1e7"
-    >
-      <v-col cols="12" sm="12" md="2"></v-col>
-      <v-col cols="12" sm="12" md="2">
-        <div class="d-flex algin-center justify-center">
-          <img style="height: 28px" src="/trophy.png" alt="trophy" />
-          <div class="d-flex flex-column ml-2">
-            <small class="font-weight-bold">High Quality</small>
-            <small
-              style="font-size: 10px; color: grey"
-              class="font-weight-medium"
-              >cratted from top materials</small
-            >
-          </div>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="12" md="2">
-        <div class="d-flex algin-center justify-center">
-          <img style="height: 28px" src="/warranty.png" alt="trophy" />
-          <div class="d-flex flex-column ml-2">
-            <small class="font-weight-bold">Warrenty protection</small>
-            <small
-              style="font-size: 10px; color: grey"
-              class="font-weight-medium"
-              >Over 2 years</small
-            >
-          </div>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="12" md="2">
-        <div class="d-flex algin-center justify-center">
-          <img style="height: 28px" src="/free.png" alt="trophy" />
-          <div class="d-flex flex-column ml-2">
-            <small class="font-weight-bold">Free Shipping</small>
-            <small
-              style="font-size: 10px; color: grey"
-              class="font-weight-medium"
-              >Order over 150$</small
-            >
-          </div>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="12" md="2">
-        <div class="d-flex algin-center justify-center">
-          <img style="height: 28px" src="/support.png" alt="trophy" />
-          <div class="d-flex flex-column ml-2">
-            <small class="font-weight-bold">24 / 7 Support</small>
-            <small
-              style="font-size: 10px; color: grey"
-              class="font-weight-medium"
-              >Dedicated support</small
-            >
-          </div>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="12" md="2"></v-col>
-    </div>
-  </v-row>
+  <Recommendation />
   <Footer />
 </template>
 
@@ -136,6 +79,7 @@ import Header from "@/components/Header.vue";
 import FurniItem from "@/components/Home/FurniItem.vue";
 import Footer from "@/components/Footer.vue";
 import { ref } from "vue";
+import Recommendation from "@/components/Shop/Recommendation.vue";
 
 const activeItem = ref("Default");
 
